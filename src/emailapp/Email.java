@@ -44,7 +44,8 @@ public class Email {
 
     // Generating a random password
     private String randomPassword(int length) {
-        String passwordSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%"; // Set the values that the password can take
+        // Set the values that the password can take
+        String passwordSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%";
         char[] password = new char[length];
         for (int i = 0; i < length; i++) {
             int random = (int) (Math.random() * passwordSet.length());
@@ -81,5 +82,4 @@ public class Email {
                 "\nCOMPANY EMAIL:" + " " + email +
                 "\nMAILBOX CAPACITY:" + " " + mailboxCapacity + "mb";
     }
-
 }
